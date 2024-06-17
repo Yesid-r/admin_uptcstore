@@ -3,7 +3,7 @@ import { BASE_URL } from '../../../utils/constants';
 import axios from 'axios';
 import { AlertDialog, AlertDialogBody, AlertDialogContent, AlertDialogFooter, AlertDialogHeader, AlertDialogOverlay, Button, Table, Tbody, Td, Th, Thead, Tr, useDisclosure } from '@chakra-ui/react';
 import toast from 'react-hot-toast';
-import { Edit, Trash } from 'lucide-react';
+import { Trash } from 'lucide-react';
 
 const CategoryPage = () => {
     const [name, setName] = useState('')
@@ -23,7 +23,7 @@ const CategoryPage = () => {
             const response = await axios.get(`${BASE_URL}/api/category`);
             setCategories(response.data.data);
         } catch (error) {
-            console.error('Error fetching colors:', error);
+            console.error('Error fetching categories:', error);
         }
     };
     const handleSubmit = async () => {
