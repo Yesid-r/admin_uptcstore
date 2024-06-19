@@ -25,7 +25,7 @@ const Routers = () => {
   }
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/" element={<ProductPage />} />
       <Route path='/color_register' element={<ColorRegister />} />
       <Route path='/productos' element={<ProductPage />} />
       <Route path='/productos/:productId' element={<RegisterProduct />} />
