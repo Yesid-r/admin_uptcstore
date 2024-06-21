@@ -9,6 +9,7 @@ import RegisterProduct from '../components/page/product/RegisterProduct'
 import CategoryPage from '../components/page/category/CategoryPage'
 import SubCategoriesPage from '../components/page/subcategories/SubCategoriesPage'
 import { AuthContext } from '../context/AuthContext'
+import OrderList from '../components/page/order/OrderList'
 
 
 
@@ -31,6 +32,7 @@ const Routers = () => {
       <Route path='/productos/:productId' element={<RegisterProduct />} />
       <Route path='/categorias' element={<CategoryPage />} />
       <Route path='/sub_categorias' element={<SubCategoriesPage />} />
+      <Route path='/ordenes' element={<OrderList />} />
 
     </Routes>
   )
