@@ -24,6 +24,7 @@ const RegisterProduct = () => {
   const [categories, setCategories] = useState([]);
   const [subCategories, setSubCategories] = useState([]);
   const { productId } = useParams();
+  
   const isNewProduct = productId === 'new';
 
   const navigate = useNavigate()
@@ -117,7 +118,8 @@ const RegisterProduct = () => {
           categoryId: formValues.categoryId,
           subCategoryId: formValues.subCategoryId,
           price: formValues.price,
-          images: formValues.images
+          images: formValues.images,
+          sizes: formValues.sizes
         }
         console.log(`data to update: ${JSON.stringify(formatUpdate)}`)
         await axios.put(`${BASE_URL}/api/products/update/${productId}`, formatUpdate);
