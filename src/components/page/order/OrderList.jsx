@@ -99,7 +99,7 @@ const OrderList = () => {
                     </div>
                   ))}
                 </Td>
-                <Td>{order.orderItems.some(item => item.isPaid) ? 'Yes' : 'No'}</Td>
+                <Td>{order.isPaid ? 'Yes' : 'No'}</Td>
               </Tr>
             ))}
           </Tbody>
