@@ -10,6 +10,7 @@ import CategoryPage from '../components/page/category/CategoryPage'
 import SubCategoriesPage from '../components/page/subcategories/SubCategoriesPage'
 import { AuthContext } from '../context/AuthContext'
 import OrderList from '../components/page/order/OrderList'
+import Dashboard from '../components/page/overview/Dashboard'
 
 
 
@@ -33,6 +34,7 @@ const Routers = () => {
       <Route path='/categorias' element={<CategoryPage />} />
       <Route path='/sub_categorias' element={<SubCategoriesPage />} />
       <Route path='/ordenes' element={<OrderList />} />
+      <Route path='/Overview' element={<Dashboard />} />
 
     </Routes>
   )
